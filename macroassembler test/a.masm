@@ -1,0 +1,6 @@
+$include b.h
+(here)
+$bone here
+(end)
+@end
+0:JMP
