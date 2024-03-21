@@ -1,0 +1,452 @@
+This would actually be project 12 in the cannon one since 13 is do whatever you want.
+Else it is project 7 since it starts with stack. so it is project 12/7 because 127 is 1 less than 2^8 so it looks cool.
+
+stack changed with features added. for optimization
+
+operators changed so that it has xnor and xor which needs another register. since we were using R15, it seems that any R from 3 to 15 is just as avalible. lower R are used by  sp lcl and stuff. In case of error, the program would infinite loop and put error code to 3 because error looks like 3rror and 3 is the start of http errors
+
+Sci is name to 5Sci so that alphabetical order would be followed
+
+Another thing changed was that instead of @SP @LCL @ARG @R15 it would be $AtSP $AtLCL @AtARG so that people who want sp and stuff in different places can change it. Command line registers are not individually set so people can adjust how many is maximum. R15 would be changed to @14 because before I thought R16 existed, since 15 is one less than heao=p. I think it should be like legacy and 14. Roman numeral system used in wording was proposed by stand-up maths youtuber. it starts at IV and gose down because thoose 7 are best looking. C is used so that it can visually seperate the other words. the exmptyness in C makes it a better spacer
+----------------------------------------------------------------------------------------------------------------
+
+Stack
+operatorS
+Function
+DPyRarray
+Cstruct
+Bignum
+Art
+Sci
+
+SABCDFSS grading system
+
+following discription was what I was going to write, if I ever got it done before I finished autumn 2023 (that time, Sci and Art was just Sci):
+
+Find what is your final grade letter in CSE 3724 by seeing how far you got. I got a triple S, and all of my classmates got a F. There is no A, you either overshoot and exceed or your GPA drops. B is the most middle grade, in fact it is between one that startswith Cs and Sc. /s
+
+Grade       Name of File
+
+
+F       Function (also includes the Stack, Operators, and Procedures which is Project 7 because F is the largest grade range 0-50, I use to think that F is also the 7th letter)
+D       DPyRarray
+C       Cstruct
+B       Bignum
+A	Art
+S       5Sci
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Function is Procedure.c but can return multiple things onto stack, also the popFramef doesn't need useless arguments.
+
+DPyRarray implements array with D, Python, and R array manipulation. The heap will be created. There would be automatic array resizing. To let functions keep track of arrays, a portion of the heap would be permenant generation to give info.
+
+Cstruct introduces C-like concepts, such as datatypes, structures, switch statements, memory defraging, malloc.
+
+Bignum operates on pointer of array of numbers to do bitsift (circular and linear), multiply, divide, modulus, add, subtract, both signed and unsigned, float point and integers.
+
+Art can do newline, line feed, carriage return, tab, space, and page break, be able to print digits in A or Y (Yes also 1 also true, A is for Art), N (No also 0 also false), T (Trinary also -1 also nulltype), G and C (base 4, ATGC). Example: AYN, YN, AT, YT Note: A and Y are the exact same value. This japanese character, 乃, would remind you about it because it is as simple as the A and Y are. Just a few lines, it is very lovely. What is good with Art? Ai, also starts with A. But one time 乃 was mistaken by an Ai for 73 so my favorite number is 73. Also file seperators should be yen sign. Since yen is no part of the japanese alphabet, if you are japanese, remind yourself of 條 , it means a lengthy item in chinese, just like file paths, also a valid japanese character. Also print right to left, and backwards. and also read screen. to read screen, font and stuff would have to be specified. It reads by comparing pixels to calcualtion, and also there must be error correcting, so that the computer need to identify if the reading is just shifted a little bit from a know letter.
+
+Sci graphs stuff in 2d and include imaginary numbers. Can blur screen, do convolution and FFT. Can copy rectangular region of screen and store in array in hilbert curve format for rotational invarient convolution nueral network. Also string compare in the 9 bit encoding that I made up. convert from base 1 to 37 to base 1 to 37. compute in balanced trinary. also compute mathematical expressions from right to left. Compares if 2 file directories are the same (за and ざ would evaulate to be different unlike in strings) 
+
+---------------------------------------------------------------------------------------------------------------
+Order of operations is to compute expressions in wesakasumeepe, which etymology came from tensor and first, replace S, c, and t (looks like i) with the next letter of t which is u. Ue declines into w. and remove a vowel in the middle. Then I don't like how wensor sounds like, so I choose a something that doesn't remind me of british royalty. it is wesakasumeepe because of bad mee6 news, and that the choosing of the name reminds me of how the soviet computer science named np-hard as path-finding. But it is wesakasumeepe and not wesakarumeepe because most of the soviet science came from outside of modern day russia. For example, Ukraine and DDR are bigger than Moscow. Therefore it is su and not ru.
+
+for simplicity, in Sci, the operations will be done on formated string
+
+1st evaluate tensors
+which includes anything callable or actual tensors
+
+2nd evaulate parenthesisi
+
+3rd evalate based on priority (user defined)
+2 +_1 3*5 is now 25
+but
+2 + 3*5 is just 17
+
+4th evaluate operations that are close together and then further (substitute characters don't count)
+2+3 ⨯5 
+is equal to 25
+2+ 3⨯5 
+is equal to 17
+2+3(x+1) 
+is equal to 
+3x+5 because there is no space between 3 and parenthesis; plus sign is equal to one space
+3+5*2=13
+however
+3+5⨯2=16
+because + and ⨯ take the same space but * takes fewer.
+
+5th evaluate natrual langauage
+= is natrual langauge 
+== is not natrual langauge
+remember that reason is slow (like the quote about how fast lies spread compared to truth)
+4 + (3 this is not a 3)
+evaulates to
+4 + (3 this is not a 3) because they are all part of natrual language
+assume that 4+ (3 is not natrual language,
+4+ (3 cannot be mathematical therefore
+proof by contradiction
+
+6th evaulate  left to right or whatever the last special character told you to.
+\A2+3⨯5 is 25
+\a2+3⨯5 is 17
+
+------------------------------------------------------------------------------------------------------------------------
+
+Debugger.c (discontinued)
+
+C file that debugs masm. to make a breakpoint on a line comment "//breakpoint". Not backwards compatible, when (variableName) is at, A register stores file name, varible name, and offset. This can be moved to D and M registers. ROM address will always return greater than 0 unless it is 0. This is made for ROM to store more items. RAM of a ROM address always return 0. You cannot do multiple assignments with () or =, or else "overconstrain varible"
+
+My classmates have always thought that people should learn C and C++ first. I think that you should learn C last. Python first, Hack second. My opionion valid. None of them ever wrote stuff as good as me.
+
+------------------------------------------------------------------------------------------------------------------------
+
+FIle extension was .h so I was thinking about it. Maybe it should be .h03 just like .f is F# but .f03 is fortran. but then ho3 looks like hoe and that is nsfw. so it can be .h03 .h95 .hor .h90 .h77 so you can choose based on what college you are in
+
+but h77 is close to h88 and hh88 and hh which is bad politicaly incorrect words. so I name them after class number which is 3723 or 169420. 169420 will be reserved for text enconded files in 9-bit characters. so it is 3723.
+
+
+------------------------------------------------------------------------------------------------------------------------
+9 bit encoding (named 169420 because hack is 16 bits and it was first programmed in hack, and each char is 9 bits long, and the 420s)
+first characters 1 to 420 (almost 69420) inclusive are consonant1+volwel1, consonant1+volwel2 ... consonant2+vowel1,consonant2+volwel2... consonant30+volwel14, underscore, volwel1..volwel14, consonant1..consonant30, base 37 (0 to a), space, tab, newline, page break, single quote, double quote, parenthesis nest, parenthesis denest, substitute character, backslash(is not actually backslash, it just needs to be a control character). WHich is exactly 512. 
+
+
+Actually, binary startswith 0, so it is 
+substitube character
+420 CV
+_
+14 V
+30 C
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZa
+space
+tab
+newline
+page break
+'
+"
+(
+)
+\
+
+also 420 CV is grouped C_1V_1 C_1V_2 ... C_1yV_7 C_1yV_6 ... C_2V_1
+
+example: за зэ зи зо зу зы зъ зйъ зйы зё зйи зе зя
+a and ya always go first and last like in the russian alphabet
+
+The consonants are arraged as C_1 C_1゜ C_2゜ C_2 C_3 C_3゜ C4゜ ... C_15 C_15゜
+Although zigzagging in 2 can be done in ordering volwels it wouldn't please Aя
+
+-------------------------------------------------------------------------------------------------------
+special characters
+\0 is string terminate
+\\ is normal backslash
+\R is to print right to left
+\L is to print left to right
+\D is to print down to up
+\U is to print up to down
+\Z is named after ℤ integers which is to delay expansion and used in formatted string
+\N is named after ℕ natrual number which is to not delay expansion and used in formatted string
+\A is to evaluate expression forwards
+\a is to evaluate expression backwards
+\H is to print horizontally before vertically
+\V is to print vertically before horizontally
+\_ is to declinate last C if C is withing 2 characters before
+\O is parent directory
+\F is ¥ file seperator 
+\C is $ command or start of file path or (in combination with other characters before) hyperlink, physical drive, ect... 
+\T is carriage return
+\W is line feed
+\B is to clear screen if page break
+\E is to horizontal line if page break
+\1 is to zigzag while printing
+\2 is to not zigzag while printing
+\3 is to print as if storing numbers after FFT is used on image
+\4 is to not do \3
+\5 is to print characters mirrored
+\6 is to not do \5
+\7 is to print characters upside down
+\8 is to not do that
+\9 is to print inverted colors
+\G is to not do that
+
+No special characters except normal backslash allowed in filenames
+
+
+\4\2\V\U\L prints characters in traditional japanese style
+
+both \Z and \N must be present around a variable
+
+jpg encoding uses \3\1\V\U\L
+
+operators in formatted string except parenthesis, space, substitute characters, will be required to have callable function
+
+operators can be named anything as long as  the special characters ( numerals, whitespace, control character) are in quotes. Operators have to also define a size and priority. which would be descirbed outside of formatted string. Operators must be procedural call. and recomemed to be functional. Operator number of arguments can change, by being defined in how many commas in the parenthesis. THere are no predefined operators, not even negative sign.
+
+operatorCall is a call that doesn't pop any arguments.
+
+any tensors are flattened so to encode tensors you would need pointers
+
+procedure id has datatype of callable
+
+tabs are lowest priority infact they can only be priotized by calling 
+
+The only operation that is already defined would be outer product. outer product because of parenthesis. if string formate is %%(%%\t%%) or %%%% it would return outer product and flattened into vector. If string is %%func%% it will push the front then the back and operatorCall 2. If string is %%func(%%) or %%func(%%\t%%) or (%%)func(%%) or (%%)func(%%\t%%) or (%%\t%%)func(%%) or (%%\t%%)func(%%\t%%) it would procedureCall with each element of vector from front to back pushed as args and then outer product with the front one.
+
+func%% is invalid, it must be surronded by numbers even it it is just %1%
+
+variables used in computer algebra systems and not constants would have to be in formated string as !! 
+
+constants from arrays are called by ¡¡ and index increase every time
+
+one interesting thing to think about is is %1% an error code or just equal to 1. for such computer algebra system %string of numerals% would be defined as the same as the number which the name is itelf
+
+ALso if it was anything other than flattened outer product, it would not be defined for different sized vectors, unless it was some obscure function. also it was a coincidence that putting 2 numbers together is that
+
+Flattened outer product is choosen because it is well defined over the vectors and the return values of the function. Also it is also injective with the exception of associative property of multiplication. 
+
+Flattened outer product depends on read mode
+so theese 2 are different
+\V\U(%a%\t%b%)(%c%\t%d%)
+\R\D(%a%\t%b%)(%c%\t%d%)
+
+----------------------------------------------------------------------------------------------------------------
+
+IME
+ 
+printing characters other than Y,N,A,T,G,C and white space would not be implemented because too hard.
+
+However, in somewhere it would be defined, there would be numerals 0 to a unchanged. the underscore depened on IME in that if it is arabic, the underscore would be on top instead of bottom and if it is up and down, then it would be hyphen in the middle. whitespace would just be whitespace like on any ime, parentheses quotes are unchanged. substitute character and backslash I don't know. V, C, CV only encode sounds, so it depends on the IME that you also have installed, so it can print Hangul, Chosŏn'gŭl, hiragana, cyrillic, latin, ect ...
+
+--------------------------------------------------------------------------------------------------------------
+not is neg subtract 1 so math operation
+spaces in names are replaced with / for visuals
+
+Stack now has 39 total macros
+3 input into stack: pushA pushD pushM
+10 outputs from stack: popAD peekAD peekA peekD popA popD popMD peekMD popAMD peekAMD
+2 set pointers: =&* =*&
+1 dereference ptr: *
+4 lcl arg operations: %= %% != !!
+1 initialize : shapeFSS
+2 error checking: shpaeLESS check/shapeRROR
+14 hardware information: @/¡ @/! @/% @/$ @/¥ @/= @/↩ @/CIV @/CV @/CVI @/CVII @/CIIX @/CIX @/CX @/SCREEN @/KBD
+
+operatorS now has 19 macros
+2 2-input math operations: + -
+2 1-input math operations: not neg
+6 compare operations: .lt. .gt. .le. .ge. .eq. .ne.
+8 logical operations: and or nand nor xand xor xnand xnor
+1 program control: ::
+
+Function now has 5 maros
+3 calls: voidCall, procedureCall, functionCall
+2 syntax: locate, return
+
+DPyRarray now has 8 macros
+1 malloc : Rarray_popSize
+2 hanoi tower : atomicswitch hanoi_pop>3
+1 stack operation: dup
+1 pop array: []
+1 Rarray operation: [:]
+1 py array operation: [::]
+
+
+Cstruct now has 0 macros
+
+
+
+Bignum now has 0 macros
+
+
+Art now has 0 macros
+
+
+Sci now has 0 macros
+
+
+--------------------------------------------------------------------------------------------------------------
+
+QA
+
+Why choose \C instead of \S for $?
+
+Athough $ is combination of s and slash (the symbol is a little bit titted). C is chosen because C drive, C is a programming language that is associated with windows and bash. C and F are also piano keys. ALso cent sign has C. cent makes up $ but yen is already indivisible.
+
+Why no file seperator character?
+
+file names should be least restricted , if there was then computer cannot save names in pure binary and have to allocate a special character to represent. also file seperators are not used commonly. only encode stuff that is seen commonly.
+
+Why 30 consonants? 
+
+back in msms, I thought about base 23 numerals, but what for 18 since 18 and 23 were numbers that I connected together because they remind me of pvzgw1 where I mistake the damage of toxic pea to be them. So I had decided that 18 was the number of bits per memory address (It would fit 2 9-bit characters) I had also calculated that 30 was also important. Not only is 18 and 30 between twin primes, but also that 23 is the only prime between the 2 pairs, and 23 is the first prime to not be in a pair. furthermore 30 is exactly in the middle of not only twin primes, but also the first 2 non-pair primes. So I thought 30 to be too big for memory address, volwels, number base, and it is just right for the number of volwels. 
+
+Why 14 volwels? 
+
+back in msms, I had learned russian, there were 6 volwels and 5 VC. I had thought what would the hard version of ы be? that would be the soft h that is missing in alphabet. I researched because that time I was trying to create vocaloids, and soft h is a volwel. so there are 7 volwels. then each is paired with Y to get 14 total. X means missing, so there are XX and XY, no YY because that is 2 consonants. I had also calculated that both 14, 30, and 62 (all the numerals defined by alphabet) are 2 below a power of 2. so if you were to take all 0s and all 1s as control characters, it would be 14, 30, and 62. So what would be base 6, 126, 254, and 510? NOAVYZ (list of very simple geometric letters), 169420 encoding without substitue and backslash. 126 and above, I don't know.
+
+Why CV,V andC?
+
+In hiragana all are CV and V. but to make all possible sounds there needs to be C. so it is that. also doing so would be good execise to implement a string compare function.
+
+
+Why 37 numerals?
+
+I have thought that 23 would be the best base. However there would be people that would use even bigger bases. It stops at 37 since it is not a twin prime there are few primes around. and that at 37, it is a big number.
+
+Why qoutes and parenthesis?
+
+parenthesis because it is directional. but also quotes need because nested parenthesis are hard to look at. 2 types so that one can contain the other.
+
+Why 4 white spaces?
+
+they look distinct from each other. there isn't after page break, becuase users wouldn't be able to tell between closing a file and opening another from flipping a page
+
+Why substitute and backslash?
+
+000000000 means it is blank so it is like substitute
+111111111 is a lot a ones like to get attention of something
+
+
+What are some off by one errors?
+
+12 and 13 (square root of LCD of 16 and 9 and square root of concatenation of 16 and 9) with 13 and 14 (both of the squares has 1 and 6 touching 9)
+
+14 and 15 with 13 and 14 is like 1983 with 1984. 1983 doesn't have any coincidences despite being right beside the infamous 1984. So is 15 like 1983, unless you think 225 (15 sqaured) is a really cool number 😎. the fact that the 225 add the 2 together to get 45 and 45 squared is 2025. (not a endorsement to  project2025 or 45th president) is not that appealing because it is cliche. In fact, so cliche that, 14 and 15 would be in some music videos in that the 14th and 15th music video is for the same anime, I think.
+
+What fashion do I think is cool (reference to 225 being a cool number)?
+
+Unlike what that most internet roman historians think (i am not one of them), I do not think that bad german people were cool. I think that music videos with supposedly evil german architecture would not actually have any. Evil germans build grey concrete boxes. 
+
+I think that buildings should be colorful, but not grafitie or advertisment kind of color. And no spikey architecture ( traditional european traditional japanese, chinese, korean, ect...) no wooden on outside. and also, trees with colorfull flowers.
+
+I don't like roads
+
+Most parts of building should be made of concrete, steel or mineral wool. I like wooden floors because wood is not heat conductive. The wooden floor panel should be thin. Wood that should be used is red like minecraft acacia. because red wood has highest corrosion resistance. all the buildings need to have walkable roofs.
+
+Walls should be covered with copper foil. A saftey feature needed would be to detect if current in foil. copper foil is waterproof, antimicrobial and corrosion resistant. Antimony is non-toxic to humans, and the etymology of monk is false and the story never existed. However, for implant uses, I think copper should alloy with titanium becuase titanium is not a biocide to almost every organism. copper walls would look better than drywall.
+
+All the windows are made of some plastic. 
+
+if there are outlets and stuff, then there is a walkable space between the walls that is walkable such take the wires can be reached. The ceramic and rocks that are used should not be granite or anythings. It should all be galena. Because I once thought galena has heat conductivity of wood and smoothness of granite. But the filling should be fibreglass or similar because of low density and heat insulating. 
+
+I don't like black, blue, white, orange, or red uniforms because they are cliche. I like green. I don't like capes, they look useless. shirts, ties and stuff are out of place because what if they have big boobs. I think that a short capelet that goes in front would look the best. out of zipper, velcro, and button, I would choose button. I think medals look bad because the reflectiveness look out of place. I think that magenta plastic things look the best since magenta is the opposite of green on the color wheel.
+
+Statues should be made of aluminium because aluminium is the most reflective in uv and visible. over the aluminium should be refractive transparent ceramic. ceramic would protect against mercury. refractive so that at different angels it would get color and not be uncanny like historically accurate roman statues. And refractive ceramic can make dielectrics which can make a dielectric mirror.
+
+In conclusion 15 (sqrt 225) is a really cool number like a music video 💚👗🔰🙋‍♀️🟢👒🪟🏳️‍🌈🪟⛪ with 1983 (one less than 📕1984) (like 15 being one less than 💻16) blackmarks ⚫👗💼(2 black duffle bags containing humans 😟)👜 filmed in singapore ⛰️
+
+Do you like computer (💻16) or book(📕1984)?
+
+Can't say book because haven't read in a long time.
+
+Do you like nets?
+
+I like nets. In many times in warfare, nets came on helmets to attach vegetation for camoflauge. And they do look good on helmets because it is less boring than a solid color 🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓
+
+Why is Computer organization the best class?
+
+37 and 23 are important numbers to me in this opensource, and coincidentally the class I based it on is formerly 3723, infact the semister I took it was the first semister that it changed to 3724. Although, if any class follows my SABCDFSS ciriculum, it would be the worst. OneHundred% that it is a joke. 
+
+
+What is my ideal programming language?
+
+The programming language would have requirements of atleast word size of 1 bits. THere is no min or max on address size.
+
+It would work on bitarrays and memory would only be done on bits, and it is the same with pointer arithmetic.
+
+Instead of classes and structures, so when doing inheritance, compositions there are options for compiler optimization. 
+
+no functions only macros
+
+number system is base62 0to9 then capitalized alphabet then lowercase.
+
+the things that are treated as variable names are emojis and hanzi and the user can create their own characters using radicals and stuff. 
+
+all varible names must have atleast one of the emoji or hanzi and no hiragana
+
+hiragana and blackboard letters are used in keywords and pipes
+
+brackets parenthesis quotes and stuff are replaced with html tags or something.
+
+The best ide would be inspect element🤓
+
+you can nest your code whenever you want
+
+break (something in japanese) denests your code and jumps to whatever line is not as denested
+
+break needs a parameter of how many to denest
+
+continue is the same continue and break uses the same keyword
+
+
+continue and pass are not only the same keyword but also the same non-delayed expansion keyword
+
+there is no private, protected or global keyword. instead the labels and variables just expire after certain amounts of lines or denests that is specified in declaration. It can be use if the variable is saved by a pointer
+
+program control would use be fork where there id of the daughters can be used to compute the ids of the others, and same with process. a traditional fork, so that all children can find parent.
+
+the data types are number,balenced trinary bit,bit,pointer, 1 indexed array with fixed word size, 0 indexed array with fixed word size, label, member of (class, structure, type, ect..), file path, formatted string, mathmatical operator, callable, and literal.
+
+the operations on complex numbers are  built in.
+The encoding of filepath, string, formatted string are the same as in here, so it is 169420
+
+6 types of numbers
+𝔸 which represents affine geometry
+	10...0 is unsigned infinity
+ℕ is natrual numbers
+	1...1 is infinity 
+	0....0 is 0
+𝕆 is vector but scientific which can represent octanarions
+𝕍 is vector of ℤ
+𝕐 is int that I use to thought how it was encoded (Y is close to ℤ)
+	01...1 is positive infinity
+	1...1 is negative infinity
+	0...0 is 0
+	10...0 is null
+ℤ is int (a more optimized version of 𝔸 but without infinities or null)
+
+no if statements, it is boolean labels.
+boolean labels are ゜ and ゛ white space is required around them
+labels can be put before or after any line without newline unless the line has :: after non white space which means multiline
+:: makes all to right as comments with the exception of go to
+; (like colon)means end line and can stack multiple lines in a single line. ;; is also valid but that is just empty lines
+
+To declare that one of them is a string of ones use 𝕐 or 𝔸 because smallest is 1...1 ℤ,𝕍, and 𝕆 do not count because the string of 1 would be an error that isn't caught. just like how some hiragana do not get modifiers
+
+To decalre that one of them is a string of zeros
+
+import takes filepath, hash function, hash, and expiray, only one import per ; or line
+
+declaration takes value and expiray. varible names can be many on there. to change a value or expiray, the variables take on the one that was closest behind it.
+
+expiray takes in literals have the form from (N) nest level (Z) to nest level (Z) (N)
+
+go to takes in form label name (:: for dots on corners makes an X) line (Y, null exits program) nest level (Z) like coordinates. XYZ
+
+macros takes in literals and have the form macroname literals
+
+callable is like stack. there is push pop peek. void function can be run on callable. but the void can only change the stack. ¡callable¡ does a pure function call on the stack and returns only 1 value. each callable can only have 1 function call.
+
+You can call expired variables with labels. 
+
+=゛ returns ゛ if eqaul to else ゜ are the other rules are obvious
+
+fi finds the 1st boolean above it that matches what boolean was returned and go to the boolean label
+
+if is the same but down
+
+if and fi statements end at a boolean label
+
+.var. returns a string of the 1st bit duplicated into the size of var
+
+if .var. ゜
+XYZ :even: 0 0
+	XYZ :: ∞ 0 ゛
+	XYZ :odd: 0 0
+
+-------------------------------------------------------------------------------------------------------------
+varible length 169420
+if 1st char is a C and second is a V, it would be a wide character with length 3, unless 3rd character is 000000000 which would return CV or 111111111 which it would be CV and then a special character. else if the 3rd characters second bit is 1, then it would be a wide character of length 4 unless the 4th is 111111111 which would be CV and then a character and then a special character 
+so there are 2^9+420*(2^9-2)/2+420*(2^9-2)/2*(2^9-1) = 512+107100+54728100 = 54835712 The number is divisible by byte size which is 2^9 and a twin prim 107101
