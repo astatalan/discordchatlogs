@@ -1,0 +1,903 @@
+Discontinueing (march 27 11:34) compiler and stuff, already hhave too many languages planned. Instead I would make hdl of x75 machine coade, along with x75 assembler and macroassmebler.
+
+Others still planed after project 7 and 8 and macroassembler is implementing 169420 in hack assmebly (wide char is 9 words totaling 144 bits.)
+
+THere are just too many languages I have planned
+_low level
+x75 machine code x75 asssembly x75 macroassembly
+_OO
+C12 D2 Dalton
+_command line
+FORTRANI FORTRUN
+_Functional
+YipYap NipNap 
+
+translation and superset: machine code to assembly
+superset: assembly to macroassembly
+embeds: macroassembly to C12
+superset (except for restrict): C12 to D2
+embeds: D2 to Dalton
+
+lowlevel-commandline-oo
+                    -functional
+file extensions
+.sm .asm .masm
+.c12 .d2 .mol
+.fi .4i .mf
+.m
+(machine code is same as exe) (asm for asmbly) (masm for macro)
+(C12 c12) (d2) (mol is for molar)
+(fi fortran i) (4i 4 for for) (mf keep tradition of subtracting one char and start with m. f for for and mf also for transitioning)
+(keep tradition and also nh look like m and also that no distinction between yipyap and nipnap code)
+
+
+almost this coincidence but off by one: f=5 4 i =9 m=13, then 4 is d and c is 3
+
+There is C. but only if NBC. B and D are opposites like in btdb→btc. N could be yipyapnipnap becuase there is already an N there. B can be the compiler name. becuase compiler determines how C like it runs. F like fluorine, like how the program flows everytime person type something in terminal. but what about O?
+
+HDT B C N O F
+K Y V W U I P S
+
+so far no
+
+O K V Y W U I P S
+
+I can be in fi and 4i
+
+O as in object oriented like how C needs O irl
+
+S as in ASM. a is prefix so it should be .sm and not exe the I accidentally type with ru ime  to see soft sign and voiced soft sign are sm. 
+
+K because C and then fortrun says they are same letter but different alphabet so treated same.
+
+We just need to leave off the metals yuvw.
+
+P because of the 3 H D T for H only D is related. So P becuase D
+
+HDT D2 for superset of C12
+B for compiler name DB is C. D2 needs compiler to be optimized into C12
+C C12 because all life is made of C
+N NipNap YipYap which is functional. Like how protiens make enzymes which are like function
+O OO for both C12 and D2 like how life is HCO
+F F as in commandline. It is a line as if it flows like fluorine etymology
+K which is same as C because encoding. like Na, K, and NH4 would all work the same if there is a way to design the proton gates around it.
+I as in it is 18 bits. word size isn't that important like life can evolve to find enzyme that use different metal ion. I think all enzymes have a iodine ion only version
+P which selects D from HDT. P as in phosphrous as in in ADP, phospholipids and nuclic backbone, it performance relies alot on small stuff like chirality, and thereotically atomic mass.
+S as in the machine code which is how all code works. like sulfur in ECC
+
+
+Y yip yap, ok there is no more
+V has to exists that that u can connect with w
+U double u not double v. u has similar density to w
+W upside down m like in .m. w is heavy like it lines to outside due to centripetal force
+
+----------------------------------------------------------------------------------------------------------------
+
+Announce the developement of FORTRAN superset that is interpreted (FORTRAN is interpreted because cannot use varibles before definition) and is commandline script.
+make directory and stuff would be shortened
+things that are dangerous like delete have to be typed out
+no using loops, varibles, user-defined functions without start program
+Not only are all uppercase and lower the same, but also maps to characters in CV
+
+yip yap markup language is a reinterpretation of yip yap and is for displaying text. There can be other things run on it like photos and stuff. normal yip yap ignores markup langauge macros and picture stuff
+
+
+And  x75 assembly now has core cache. there will be instructions that update ram from cache and store ram into cache. x75 assembly is run on cores.  There would be no support of outputing 1 bits. instruction of bitshift would take 3 arguments (target, replace, shift) and output a chimera of target and replace. 
+
+yip yap came from japanese slurs nip and jap. in russian, the words begin with ya. so it is yip yap
+
+Another reason why black theme is that black bullet would be the same as newline
+
+169420 wide characters are in format of C V 255 255 255 ... 255
+such that each 255 before last is not sub or \ and xor value being 1
+and that last 255 is not \ or sub and xor value being 0
+----------------------------------------------------------------------------------------------------------------
+1st
+0 0 flower of bravery 
+sky -version 2008-
+
+
+2nd
+1 1 only my railgun 
+Late in autumn
+
+only my railgun is stupid. not that I am stupid. but because railguns only store in base 1 since the off state is uncontrollable when operating. therefore only my railgun is a stupid computer.
+
+autumn is the same word as boredom in japanese, but late in autumn, you are deep down in boredom like a computer that can only see ones and never a zero which is only my railgun
+
+3rd
+2 4 LEVEL5 -judgelight-
+memory of snow
+
+2-ary logic is enough to do logic of anythings. Infact even though 5-ary is so much powerful, 2-ary can do everything that a 5-ary can. That is why it is LEVEL5. Logic allows LEVEL5 judgement. but why is it a judgelight instead of a judgephonon or something quantum? That is because there might exist something more powerful that turing complete. and there is no way for a judgelight to prove it because it is only as poswerful as a turing computer. So phonons might be more than turing complete. 
+
+Turing computers have the memory of snow which is that it is high entropy like snowflake crystals, but from afar it looks completely uniform. like how all the cells in a SSD just look like normal uniform plastic.
+
+4th
+3 9 future gazer
+fortissimo-the ultimate crisis-
+
+In the future, It would be trinary logic because trinary is the most dense storage comapred to all -arys. That is the future because now, it is too hard to do trinary. So I amd a future gazer. We already have the technology to emulate which means we can Try anytime! Why would we try though? trinary is closer to e which means it is better and do it For shining truth! And the beauty of balence trinary logic is For dreaming eyes! The market is bad. to all those who want trinary computers:
+🎶 Fu woo... fu woo...
+Try to be glorious believer. 🎶
+And communism beats capitalism. The markets will not dictate. We will build the trinary computers Just to... go on... realize soulful heart
+Such an inspring speech
+
+The capitalists have thought that communism can never work, but when they are proven wrong it would be -the ultimate crisis-
+The greek letter and culture that such capitalist logic is tied to will dissapear. It will go away and fortissimo, out of all the greek words, is now a communist terminology. fortissimo-the ultimate crisis- will discribe the collapse of the capitalist meme culture.
+
+4 16 everlasting
+
+Despite the fact that 4-ary logic has hundreds of millions of unique gates, it can easily be computed because they are just pairs of 2-ary logic. The ability is everlasting because it is defined in math. However, 4 pin input with 2 pin out would be overkill for hdl files.
+
+5th
+5 25 Heaven is a Place on Earth
+The end of summer
+
+5-ary logic is so big with 10^17 unique gates that only God can compute and understand it. It is the first kind of logic that is not intuitive, which means that what we haven't reasoned with is out of reach. Infact if a 5-ary logic computer was here it would mean that Heaven is a Place on Earth. Since god is in heaven. 
+
+You can learn this in computer organization. Since the first time that class was offered was in fall of 2023, since 3723 isn't the same, that would mean The end of summer was when I learned about it.
+
+6th
+6 36 way to answer
+last fortune
+
+Both binary and trinary have their pros and cons. So how to resolve? make word size both bits and trits which would mean the word size is divisible by 6 since divisibility rules say that number divisible by both 2 and 3 is also by 6. Back when trinary computers exisited, having word size divisible by six is the way to answer. 
+
+But that was back then, computers cost so much money and only fun to a few. infact it would be the last fortune that a rich family would buy. In fact trinary computer would also be the last fortune today since so much practical and easier to get a binary computer, which binary computer would not counted as a fortune. thoose early last fortune computers would have there own version of fortran.
+
+
+Not only is 6 useful but the most common amount of ram is 64GiB on sumpercomputer nodes, and the limit where it would be overkill for a desktop pc is also that 64GiB is exaclty 2^36 bytes. Therefore 36 address size is the way to answer. A plus is that no waste from the unused pins and instruction handling. But since so many just choose 64 bits a 36 bit would be a last fortune considering the startup cost to make a cpu.
+
+7 49 Decade 
+
+Why 49? because 4 is everlasting and 9 is eternal reality, both of which are long time related like a Decade. It was on a time scale of Decade between the invinition of hack computer and macroassembler, which is needed in project 7. So it was a decade between those 2 phases. (I actaully don't know how long, but I think macroassembler might be only like 2 years old. Macroassembler is hack computer phase 2.
+
+7th
+8 64 sister's noise
+I'm believing you
+
+My sister only knows enlish so sister's noise is base 64. Also 8bits are both kind of related to 6, 16, and 18 bits, but that would be too big of a stretch
+
+Log4j hackers use base 64 because thoose computers are like I'm believing you when comming across the strings and then running them to get hacked
+
+
+8th
+9 81 eternal reality
+scorching heart
+
+Logic can be in base 2 but that would lack sensors, instead eternal reality would be more of 9 bits like 2^9 because that can encode all 420 syllables.
+
+But how is eternal reality? Foo・・・We can accept reality I'll link the personal wall for me and you The feeling dive into my heart So, I continue eternal reality 
+You can really tell that it is a scorching heart.
+ 
+
+9th
+10 100 black bullet
+pico scope -SACLA-
+
+ascii 10 is a newline. It is more like a bullet since bullets in word files cannot take the same line (spilting into columns counts as page break)
+
+100 is really round number like a black bullet. as the 100th ascii character, I would really give the xray research facility in japan named SACLA a d grade. Not even capitalized, it is a d minus.
+
+
+
+11 121
+infinite symthesis
+
+
+so I once had a 11 character array in fortran, it was use to pick up macro assembly commands (include	def	end) especially for include because include is the longest word. include is litterally 11 because we need to take into account the enqueue temp character, null char, newline and dollar sign detection. with include you can do inifinite things because of the imports can be arbitrarly large, so it is infinite synthesis of code. now why 121? one-2-one? one-2-one is related to functions which allows you infinite synthesis (I hope this becomes a science term) because you can apply the inverse and other stuff to create anything since no information is lost in the function
+
+10th
+12 144 
+Luminize
+unlimited density
+
+
+project 12, 12^2 is 144 like 144 is lcm of 16 and 9. Why project 12? Luminize 💡 like make you smarter. But what else for Luminize? at 144 bits, you need to use bit shifts to tke the compressed strings into wide character with 7 bits empty each. 7 bits! that is a decade long break between each character. Just like Luminize turn energy into less dense form (which is light) Luminize does the same to data. 
+
+This is assuming that word size is finite. Array access is quoted as constant time and not loglog. But it would be constant time if the bus size is infinite. similarily assume word size is the same as bus. that would mean we can put all characters into one word and thus unlimited density.
+
+11th
+13 169 
+Two souls -toward the truth-
+冬のかけら
+
+13^2 is 169. and 69 especially means 2 souls. when 2 souls come together like in 69, it is like yin and yang it is like me and nanjolno and that is Two souls -towards the truth-. towards the truth? now why 13 for truth. Social media takes you to the truth like how social media would take me to nanjolno. you need to be 13 to access social media.
+
+Back when I first thought of nanjolno taking my virginity, it was closer to a 69 than anything other position. I thought about maybe something exotic like on a pile of heavy water snow or on a pool of mercury. You can call thoose 冬のかけら since they are so cold. especially mercury since it is so heat conductive.
+
+
+12th
+14 196 white forces
+
+96 creates white forces because you eject the whhite stuff outwards.
+
+
+12th
+15 225 1983-schwarzesmarken-(IS3 version)
+
+already explained down there or summerize...
+
+In conclusion 15 (sqrt 225) is a really cool number like a music video 💚👗🔰🙋‍♀️🟢👒🪟🏳️‍🌈🪟⛪ with 1983 (one less than 📕1984) (like 15 being one less than 💻16) Blackmarks ⚫👗💼(2 black duffle bags containing humans 😟)👜 filmed in singapore ⛰️. Becuase Black is considered a cool color and singapore is a cool place to visit for the rich. Blackmarks in a foriegn language is even cooler like thoose french handbag companies that are basically scam. So german seems really cool to weird kids, add them together and get 1983 schwarzesmarken
+
+16 256 The end of escape (fripSide×angela)
+
+16 bits is the word size of  hack computer. So even if a hacker can inject to escape 9 bit characters, 16 bits would be The end of escape
+
+13th
+17 289 clockwork planet
+Break Our Limit
+
+17 bits Break Our Limit! not only is that 17 is one above a power of 2, but also its square is one above a number ending in 88. It may look similar to 2^n-1 but -1 to +1 is very different and +1 is not useful in computers. 
+
+Instead computers that do not follow powers of 2 or any other divisible number is a mechanical computer. Back in clockpunk age, computers were gears and stuff thoughtfully arrranged to calculate stuff. Not wanting to be composite they would bbe prime. And 17 is what a computer on clockwork planet would have.
+
+
+18 324 Red "reduction division"-crossroads version-
+
+18 bits per byte is good because it is divisible by 6 and therefore a way to answer. but multiplying an extra 3 shows that you are reducing the influence of binary logic and going for trinary. therefore it is reduction division.
+
+324 looks like a wavelenght. Since it is too high to see, we do music functions and go down a octave until we can perceive it. THe operation is a function because the whole visible light fits in only a single octave. And so 324 would be 648 which is red. To mix light and sound makes a intersection of a crossroads version.
+
+14th
+19 361 killing bites
+three count
+
+At 19, it is another prime, Now you are really just killing bites since 19 would be such a bad word size. 
+
+19 choices can easilyy fit in 3 counts of e-ary (counting system of god). e^3 is just a little to close to 20. But the most memeral coincidence of all is that hex is close to decimal, so what if you reapeat the sexy numbers 13, and 169. It still works since there is not carry. 19 base 10 is 13 base 16, and 361 base 10 is 169 base 16. three count phenomenone is so real.
+
+
+15th
+20 400 divine criminal
+I believe in my heart
+brave new world -crossroads version- (fripSide Only)
+
+
+In japan, you get adult status at 20 which means you can be a big criminal. That means divine criminal to some because japan is filled with spiritual atheists that likes to put labels on stuff. Maybe I will be a criminal when I am 20. But even if I was the real anti-christ, I would not be a divine criminal becuase religion is reletivistic. But I found a computer organization related way to do it! If I were to create my own religion and specifically make it so that I am logically proven to be the anti-christ in that religion. Anti-christ for the sake of science to be defined as someone who fakes christ. So to do that christ in the religion has to be someone else. All I need to do is to create a deep fake of a person and use her as a idol while the real person is completely against me. Now that is where the computer organization comes in. Why else is 20 and 400 so evil? because 19²+39=400=20^2 , and we all know that evil thing that happend in 1939.
+
+How will my antichrist reilgion survive? I would need a brave new world and the people will worship my AI version of the real person. The brave new world would be -crossraods version- since in pop culture, devil exists on crossroads. Worshiping many different antichrists is a bad idea because just one need to differ would cause people to hesitate. There for we need a frip side only (assuming the other side is not flip)
+
+
+21 441 Edge of the Universe
+
+
+
+Age 21 is such a long time to wait. to University students, it is the Edge of the Universe. Literally I will go to space when I am 21. That is why so many University students stay up all night drinking underaged. 21 is such the long wait. 441 would be the 100 in a trinary computer. 2's next prime is 3. 5's next prime is 7. A black bullet in trinary computer would do a line break even if the carriage return takes them to the Edge of the Universe.
+
+
+
+16th
+22 484 Love with You
+Blue Moon
+
+reorrient the 22^2. so now it is 4∞🫰. It reads For Infinite Finger Hearts (Love). And that is what Love with You is because You are such a good and Lovely human. 22^2 looks like two's day. That day so amny people wed because of such a coincidence. Love with You was a really good probability on 22.
+
+ two's day only happens once in a Blue Moon, infact even 1000 years from now, it would still not be it because of 3 in 3022 and also that leap year is skipped once every 128 years (since scientist measured it more accurately this time) and 3022 would become off. 
+
+
+
+23 529 
+
+when chance strikes, it is 23. I see 23 I think of thoose coincidences. 69 is divisible by 23, there are just so many coincidences with 23 in numerology and math. 529 is close to 2^9, infact it is better since with 2 base 23 digits you can specify 9 bits unlike how 3 isn't enough in base 10 to get 10 bits. Now that is also when chance strikes.
+
+
+17th
+24 576 final phase
+promenade
+
+sadly computer organization went from 3723 to 3724. right off of 23. But, This is a final phase that no one can replace computer organization's number. which means 4 credits instead of 3! No one can stop this phase!
+
+
+why else? 5 76->3 724. 5 and  3 are alike because 1st twin prime and triple primes. then 76 the 6 split into 2 and 4. 26^2-24^2=100 going to 26 would put your trajectory on a promenade.
+
+25 625 only my railgun -version2020-
+
+
+25 like 15 and 45 are cool numbers like how I wrote about it before, so would somthing be if it was called version 2020 like only my railgun -version2020-.mkv dvsk eio deo cdn <- now why was there stupidly random characters? because it is decimal. In decimal there isn't that many divisibility rules, so the characters look quite random. But there is a 2 in base 10 which gives it binary properties. It is the 5 that is stupidly causing the trouble. Now if you were to change the 2 to a 5, you would get doubly stupid. At least it wasn't pentuply or else that would stupidly rhyme like go to (the 5th planet) jupiter to get stupider. And finally we had wrote first that railguns are stupid computers. at 5, 25, and 625 a square will end in another number that ends in it which breaks after 625.
+
+18th
+26 676 dual existance
+Reason to be here
+
+in a dual existance we would use letters to count and numbers to spell which gives us 26 numerals. actually It is 676 being close to 666. Dual existance because 777 and 666 combine to make the devil and angel together in one number
+
+The Reason to be here is that at 24 it was 576 and then smoothly take a promenade to 676 which is exactly 100 away
+
+
+19th
+27 729 legendary future
+a new day will come
+
+Theretically, if we ever use 3-ary logic, the best possible word size and address size would be 27 because 3 trits to mention each of the 27 bits. And then word size being the same simplifies the instruction set. And then for every 27 consequtive 3 trits (loop around), there can be a instruction just for that. If it was ever implemented, it will show the supreme power of the 3-ary computer since 27 bits is the ideal. That would be a legendary future. It is the same in 16 bits in 2-ary because of the same numbers. 4 bits is too little so that wouldn't work. Likewise, All worship the hack computer. But what about 729, the 2 is hidden in there in the exponenet. Why would the number of trits need to be divisible by 2? Maybe some small operations would only need 2 states. like if it was gareenteed to be either a 0 or 1 and never a -1. a new day will come when we will understand.
+
+20th
+28 784 Leap of faith
+passage
+
+784 has many connections which is that it has 7 and 84, however those are weak compared to the real 1984 and requires a Leap of faith. Likewise 28 is boring and just a passage to 784
+
+
+----------------------------------------------------------------------------------------------------------------
+
+brains are like snow. high entropy but one the human scale it is uniform. We have the memory of snow. When we get truama, we get hesitation snow. And the opposite is trusty snow.
+
+28 coincided hard up there? All worship Nanjolno, the goddess of computer science. Like the goddess of reason in french revolution.
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Actually, I don't have an idea of how should the things be implemented. It is only macro calls. There is also that to call a switch, it would not be how a switch is programmed, but instead a jump table. Printing results to output seems too hard to implement. Also, if in the future, that more instructions and full 64ki memory is cannon, i would have to redo stuff. Major changes such as each pixel getting one address or bitshifts being avalible, it would be so much of a optimization that i would have wasted time. I think that a better way to convey my favorite programming thingies, such as fonts, would be to make my own language instead of this.  I think I should make a few string macros so that 169420 is first encoded in hack computer. 1694203624 so that no dot to represent a fractional number. and uses 36 and 24 because 169 (semi-prime) and 420 are very divisible by stuff and so is 169420. which means that I would not be realising stuff into msstate.  Also mention that real reason is not russian language that start with a and end in ya but that aya is nanjolno's real name. Can really specify when there are no classmates who  would try to steal nanjolno from me. and also the whole thing is filled with nanjolno references. Actually I think wesakasumeepe and my programming language is safe to realise to my classmates. Another reason is that lack of debuggers in hack programming language, though, once I did try and then gave up. and that how much should i try to optimize code. 
+
+----------------------------------------------------------------------------------------------------------------
+
+I planed to implement 0 index arrays in DPyRarray but  that would be undefined behavior if it was tried to defrag memory. When array deallocate, it would soft delete by negating the register containing the size in heap. Cstruct would have defrag memory thing which would do undefined behavior if meet with 0 index array. and probably most hardest (maybe it has to be compile time parsed) which is struct and inheritance, and composition, which is varible sized arrays. bignum to implement karatusba. but the first thing to  need implement is bitshift. I just thought of this algorithm to bitshift right which to repeated multiply by 2 (add together or bitshift left) check for negative, if bigger multiply 2 in the other register and add one. in fact I will implement all 4 types of bitshift and show to classmates as a project 8. bitwise rotation (y/n) and left or right. Bignum is to implement arbitrary large number multiplication and division. THen art is printing mostly. in arbitrary font and also detect if at end of line to loop. and sci is most importantly wesakasumeepe and string comparision and manipulation. including counting varible length characters. ([C][V][_] and [CV] are the same according to string comparision)
+
+paart of python arrays but more of Cstruct.3723 is that auto resize array when appending.
+
+THought of this. 1st delieverable would be project 7 old and project 7 and macroassembler.f03 (it is not project 7 and project 7 fan made (order matters) because i need to make mine look cannon) 2nd delieverable would be project 8 old and project 8. and also write a seperate white paper which is  about that slow implementation of multiple and divide is not used irl. and that more freedom in chooosing names
+
+
+Also updates to my current unfinished macroassembler. " is treated in copy as / but write // before ". if there is illegal ascii characters (according to windows) in ", macro filler would not import that. also the // being eqaul to / in filepath must be able to compute in macroassembler along with /../ as parent directory. 
+\0 * ? < > | ~
+
+Warngng this is a valid header file include (even though whitespace names are illegal in windows) 
+"// //\r\r\r\t\t\t\t/ ////../
+
+
+/
+/
+// "
+if a period or 2 is right after " then delete them and start at parent directory else it is a linux path 
+In windows all paths start with 2 dots
+: for absolute path
+.. for relative path
+
+In my ideal filesystem. all filenames are legal except undefined characters (blackslash interupt varible length character), special characters (characters starting with \) other than \\ and bitarrays created by blackslash, single colon (start at root), single semicolon (start of another filepath at root), excalty 2 periods (go back a folder), or exaclty one dot followed by 1 period (start of another filepath at current path).
+
+special character list
+%
+$
+
+Also 3724 students should not be assigned to write bitshift because irl, bitshift is already optimized in hardware. instead for project 8, they write the karatsuba algorithm and long division.
+
+----------------------------------------------------------------------------------------------------------------
+
+This would actually be project 12 in the cannon one since 13 is do whatever you want.
+Else it is project 7 since it starts with stack. so it is project 12/7 because 127 is 1 less than 2^8 so it looks cool.
+
+stack changed with features added. for optimization
+
+operators changed so that it has xnor and xor which needs another register. since we were using R15, it seems that any R from 3 to 15 is just as avalible. lower R are used by  sp lcl and stuff. In case of error, the program would infinite loop and put error code to 3 because error looks like 3rror and 3 is the start of http errors
+
+Sci is name to 5Sci so that alphabetical order would be followed
+
+Another thing changed was that instead of @SP @LCL @ARG @R15 it would be $AtSP $AtLCL @AtARG so that people who want sp and stuff in different places can change it. Command line registers are not individually set so people can adjust how many is maximum. R15 would be changed to @14 because before I thought R16 existed, since 15 is one less than heao=p. I think it should be like legacy and 14. Roman numeral system used in wording was proposed by stand-up maths youtuber. it starts at IV and gose down because thoose 7 are best looking. C is used so that it can visually seperate the other words. the exmptyness in C makes it a better spacer
+----------------------------------------------------------------------------------------------------------------
+
+Stack
+operatorS
+Function
+DPyRarray
+Cstruct
+Bignum
+Art
+Sci
+
+SABCDFSS grading system
+
+following discription was what I was going to write, if I ever got it done before I finished autumn 2023 (that time, Sci and Art was just Sci):
+
+Find what is your final grade letter in CSE 3724 by seeing how far you got. I got a triple S, and all of my classmates got a F. There is no A, you either overshoot and exceed or your GPA drops. B is the most middle grade, in fact it is between one that startswith Cs and Sc. /s
+
+Grade       Name of File
+
+
+F       Function (also includes the Stack, Operators, and Procedures which is Project 7 because F is the largest grade range 0-50, I use to think that F is also the 7th letter)
+D       DPyRarray
+C       Cstruct
+B       Bignum
+A	Art
+S       5Sci
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Function is Procedure.c but can return multiple things onto stack, also the popFramef doesn't need useless arguments.
+
+DPyRarray implements array with D, Python, and R array manipulation. The heap will be created. There would be automatic array resizing. To let functions keep track of arrays, a portion of the heap would be permenant generation to give info.
+
+Cstruct introduces C-like concepts, such as datatypes, structures, switch statements, memory defraging, malloc.
+
+Bignum operates on pointer of array of numbers to do bitsift (circular and linear), multiply, divide, modulus, add, subtract, both signed and unsigned, float point and integers.
+
+Art can do newline, line feed, carriage return, tab, space, and page break, be able to print digits in A or Y (Yes also 1 also true, A is for Art), N (No also 0 also false), T (Trinary also -1 also nulltype), G and C (base 4, ATGC). Example: AYN, YN, AT, YT Note: A and Y are the exact same value. This japanese character, 乃, would remind you about it because it is as simple as the A and Y are. Just a few lines, it is very lovely. What is good with Art? Ai, also starts with A. But one time 乃 was mistaken by an Ai for 73 so my favorite number is 73. Also file seperators should be yen sign. Since yen is no part of the japanese alphabet, if you are japanese, remind yourself of 條 , it means a lengthy item in chinese, just like file paths, also a valid japanese character. Also print right to left, and backwards. and also read screen. to read screen, font and stuff would have to be specified. It reads by comparing pixels to calcualtion, and also there must be error correcting, so that the computer need to identify if the reading is just shifted a little bit from a know letter.
+
+Sci graphs stuff in 2d and include imaginary numbers. Can blur screen, do convolution and FFT. Can copy rectangular region of screen and store in array in hilbert curve format for rotational invarient convolution nueral network. Also string compare in the 9 bit encoding that I made up. convert from base 1 to 37 to base 1 to 37. compute in balanced trinary. also compute mathematical expressions from right to left. Compares if 2 file directories are the same (за and ざ would evaulate to be different unlike in strings) 
+
+---------------------------------------------------------------------------------------------------------------
+Order of operations is to compute expressions in wesakasumeepe, which etymology came from tensor and first, replace S, c, and t (looks like i) with the next letter of t which is u. Ue declines into w. and remove a vowel in the middle. Then I don't like how wensor sounds like, so I choose a something that doesn't remind me of british royalty. it is wesakasumeepe because of bad mee6 news, and that the choosing of the name reminds me of how the soviet computer science named np-hard as path-finding. But it is wesakasumeepe and not wesakarumeepe because most of the soviet science came from outside of modern day russia. For example, Ukraine and DDR are bigger than Moscow. Therefore it is su and not ru.
+
+for simplicity, in Sci, the operations will be done on formated string
+
+1st evaluate tensors
+which includes anything callable or actual tensors
+
+2nd evaulate parenthesisi
+
+3rd evalate based on priority (user defined)
+2 +_1 3*5 is now 25
+but
+2 + 3*5 is just 17
+
+4th evaluate operations that are close together and then further (substitute characters don't count)
+2+3 ⨯5 
+is equal to 25
+2+ 3⨯5 
+is equal to 17
+2+3(x+1) 
+is equal to 
+3x+5 because there is no space between 3 and parenthesis; plus sign is equal to one space
+3+5*2=13
+however
+3+5⨯2=16
+because + and ⨯ take the same space but * takes fewer.
+
+5th evaluate natrual langauage
+= is natrual langauge 
+== is not natrual langauge
+remember that reason is slow (like the quote about how fast lies spread compared to truth)
+4 + (3 this is not a 3)
+evaulates to
+4 + (3 this is not a 3) because they are all part of natrual language
+assume that 4+ (3 is not natrual language,
+4+ (3 cannot be mathematical therefore
+proof by contradiction
+
+6th evaulate  left to right or whatever the last special character told you to.
+\A2+3⨯5 is 25
+\a2+3⨯5 is 17
+
+------------------------------------------------------------------------------------------------------------------------
+
+Debugger.c (discontinued)
+
+C file that debugs masm. to make a breakpoint on a line comment "//breakpoint". Not backwards compatible, when (variableName) is at, A register stores file name, varible name, and offset. This can be moved to D and M registers. ROM address will always return greater than 0 unless it is 0. This is made for ROM to store more items. RAM of a ROM address always return 0. You cannot do multiple assignments with () or =, or else "overconstrain varible"
+
+My classmates have always thought that people should learn C and C++ first. I think that you should learn C last. Python first, Hack second. My opionion valid. None of them ever wrote stuff as good as me.
+
+------------------------------------------------------------------------------------------------------------------------
+
+FIle extension was .h so I was thinking about it. Maybe it should be .h03 just like .f is F# but .f03 is fortran. but then ho3 looks like hoe and that is nsfw. so it can be .h03 .h95 .hor .h90 .h77 so you can choose based on what college you are in
+
+but h77 is close to h88 and hh88 and hh which is bad politicaly incorrect words. so I name them after class number which is 3723 or 169420. 169420 will be reserved for text enconded files in 9-bit characters. so it is 3723.
+
+
+------------------------------------------------------------------------------------------------------------------------
+9 bit encoding (named 169420 because hack is 16 bits and it was first programmed in hack, and each char is 9 bits long, and the 420s)
+first characters 1 to 420 (almost 69420) inclusive are consonant1+volwel1, consonant1+volwel2 ... consonant2+vowel1,consonant2+volwel2... consonant30+volwel14, underscore, volwel1..volwel14, consonant1..consonant30, base 37 (0 to a), space, tab, newline, page break, single quote, double quote, parenthesis nest, parenthesis denest, substitute character, backslash(is not actually backslash, it just needs to be a control character). WHich is exactly 512. 
+
+
+Actually, binary startswith 0, so it is 
+substitube character
+420 CV
+14 V
+_
+30 C
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZa
+space
+tab
+newline
+page break
+'
+"
+(
+)
+\
+
+also 420 CV is grouped C_1V_1 C_1V_2 ... C_1yV_7 C_1yV_6 ... C_2V_1
+
+example: за зэ зи зо зу зы зъ зйъ зйы зё зйи зе зя
+a and ya always go first and last like in the russian alphabet
+
+The consonants are arraged as C_1 C_1゜ C_2゜ C_2 C_3 C_3゜ C4゜ ... C_15 C_15゜
+Although zigzagging in 2 can be done in ordering volwels it wouldn't please Aя
+
+-------------------------------------------------------------------------------------------------------
+special characters
+\0 is string terminate
+\\ is normal backslash
+\R is to print right to left
+\L is to print left to right
+\D is to print down to up
+\U is to print up to down
+\Z is named after ℤ integers which is to delay expansion and used in formatted string
+\N is named after ℕ natrual number which is to not delay expansion and used in formatted string
+\A is to evaluate expression forwards
+\a is to evaluate expression backwards
+\H is to print horizontally before vertically
+\V is to print vertically before horizontally
+\_ is to declinate last C if C is withing 2 characters before
+\O is parent directory
+\F is ¥ file seperator 
+\C is $ command or start of file path or (in combination with other characters before) hyperlink, physical drive, ect... 
+\T is carriage return
+\W is line feed
+\B is to clear screen if page break
+\E is to horizontal line if page break
+\1 is to zigzag while printing
+\2 is to not zigzag while printing
+\3 is to print as if storing numbers after FFT is used on image
+\4 is to not do \3
+\5 is to print characters mirrored
+\6 is to not do \5
+\7 is to print characters upside down
+\8 is to not do that
+\9 is to print inverted colors
+\G is to not do that
+
+No special characters except normal backslash allowed in filenames
+
+
+\4\2\V\U\L prints characters in traditional japanese style
+
+both \Z and \N must be present around a variable
+
+jpg encoding uses \3\1\V\U\L
+
+operators in formatted string except parenthesis, space, substitute characters, will be required to have callable function
+
+operators can be named anything as long as  the special characters ( numerals, whitespace, control character) are in quotes. Operators have to also define a size and priority. which would be descirbed outside of formatted string. Operators must be procedural call. and recomemed to be functional. Operator number of arguments can change, by being defined in how many commas in the parenthesis. THere are no predefined operators, not even negative sign.
+
+operatorCall is a call that doesn't pop any arguments.
+
+any tensors are flattened so to encode tensors you would need pointers
+
+procedure id has datatype of callable
+
+tabs are lowest priority infact they can only be priotized by calling 
+
+The only operation that is already defined would be outer product. outer product because of parenthesis. if string formate is %%(%%\t%%) or %%%% it would return outer product and flattened into vector. If string is %%func%% it will push the front then the back and operatorCall 2. If string is %%func(%%) or %%func(%%\t%%) or (%%)func(%%) or (%%)func(%%\t%%) or (%%\t%%)func(%%) or (%%\t%%)func(%%\t%%) it would procedureCall with each element of vector from front to back pushed as args and then outer product with the front one.
+
+func%% is invalid, it must be surronded by numbers even it it is just %1%
+
+variables used in computer algebra systems and not constants would have to be in formated string as !! 
+
+constants from arrays are called by ¡¡ and index increase every time
+
+one interesting thing to think about is is %1% an error code or just equal to 1. for such computer algebra system %string of numerals% would be defined as the same as the number which the name is itelf
+
+ALso if it was anything other than flattened outer product, it would not be defined for different sized vectors, unless it was some obscure function. also it was a coincidence that putting 2 numbers together is that
+
+Flattened outer product is choosen because it is well defined over the vectors and the return values of the function. Also it is also injective with the exception of associative property of multiplication. 
+
+Flattened outer product depends on read mode
+so theese 2 are different
+\V\U(%a%\t%b%)(%c%\t%d%)
+\R\D(%a%\t%b%)(%c%\t%d%)
+
+----------------------------------------------------------------------------------------------------------------
+
+IME
+ 
+printing characters other than Y,N,A,T,G,C and white space would not be implemented because too hard.
+
+However, in somewhere it would be defined, there would be numerals 0 to a unchanged. the underscore depened on IME in that if it is arabic, the underscore would be on top instead of bottom and if it is up and down, then it would be hyphen in the middle. whitespace would just be whitespace like on any ime, parentheses quotes are unchanged. substitute character and backslash I don't know. V, C, CV only encode sounds, so it depends on the IME that you also have installed, so it can print Hangul, Chosŏn'gŭl, hiragana, cyrillic, latin, ect ...
+
+--------------------------------------------------------------------------------------------------------------
+not is neg subtract 1 so math operation
+spaces in names are replaced with / for visuals
+
+Stack now has 39 total macros
+3 input into stack: pushA pushD pushM
+10 outputs from stack: popAD peekAD peekA peekD popA popD popMD peekMD popAMD peekAMD
+2 set pointers: =&* =*&
+1 dereference ptr: *
+4 lcl arg operations: %= %% != !!
+1 initialize : shapeFSS
+2 error checking: shpaeLESS check/shapeRROR
+14 hardware information: @/¡ @/! @/% @/$ @/¥ @/= @/↩ @/CIV @/CV @/CVI @/CVII @/CIIX @/CIX @/CX @/SCREEN @/KBD
+
+operatorS now has 19 macros
+2 2-input math operations: + -
+2 1-input math operations: not neg
+6 compare operations: .lt. .gt. .le. .ge. .eq. .ne.
+8 logical operations: and or nand nor xand xor xnand xnor
+1 program control: ::
+
+Function now has 5 maros
+3 calls: voidCall, procedureCall, functionCall
+2 syntax: locate, return
+
+DPyRarray now has 8 macros
+1 malloc : Rarray_popSize
+2 hanoi tower : atomicswitch hanoi_pop>3
+1 stack operation: dup
+1 pop array: []
+1 Rarray operation: [:]
+1 py array operation: [::]
+
+
+Cstruct now has 0 macros
+
+
+
+Bignum now has 0 macros
+
+
+Art now has 0 macros
+
+
+Sci now has 0 macros
+
+
+--------------------------------------------------------------------------------------------------------------
+
+QA
+
+Why choose \C instead of \S for $?
+
+Athough $ is combination of s and slash (the symbol is a little bit titted). C is chosen because C drive, C is a programming language that is associated with windows and bash. C and F are also piano keys. ALso cent sign has C. cent makes up $ but yen is already indivisible.
+
+Why no file seperator character?
+
+file names should be least restricted , if there was then computer cannot save names in pure binary and have to allocate a special character to represent. also file seperators are not used commonly. only encode stuff that is seen commonly.
+
+Why 30 consonants? 
+
+back in msms, I thought about base 23 numerals, but what for 18 since 18 and 23 were numbers that I connected together because they remind me of pvzgw1 where I mistake the damage of toxic pea to be them. So I had decided that 18 was the number of bits per memory address (It would fit 2 9-bit characters) I had also calculated that 30 was also important. Not only is 18 and 30 between twin primes, but also that 23 is the only prime between the 2 pairs, and 23 is the first prime to not be in a pair. furthermore 30 is exactly in the middle of not only twin primes, but also the first 2 non-pair primes. So I thought 30 to be too big for memory address, volwels, number base, and it is just right for the number of volwels. 
+
+Why 14 volwels? 
+
+back in msms, I had learned russian, there were 6 volwels and 5 VC. I had thought what would the hard version of ы be? that would be the soft h that is missing in alphabet. I researched because that time I was trying to create vocaloids, and soft h is a volwel. so there are 7 volwels. then each is paired with Y to get 14 total. X means missing, so there are XX and XY, no YY because that is 2 consonants. I had also calculated that both 14, 30, and 62 (all the numerals defined by alphabet) are 2 below a power of 2. so if you were to take all 0s and all 1s as control characters, it would be 14, 30, and 62. So what would be base 6, 126, 254, and 510? NOAVYZ (list of very simple geometric letters), 169420 encoding without substitue and backslash. 126 and above, I don't know.
+
+Why CV,V andC?
+
+In hiragana all are CV and V. but to make all possible sounds there needs to be C. so it is that. also doing so would be good execise to implement a string compare function.
+
+
+Why 37 numerals?
+
+I have thought that 23 would be the best base. However there would be people that would use even bigger bases. It stops at 37 since it is not a twin prime there are few primes around. and that at 37, it is a big number.
+
+Why qoutes and parenthesis?
+
+parenthesis because it is directional. but also quotes need because nested parenthesis are hard to look at. 2 types so that one can contain the other.
+
+Why 4 white spaces?
+
+they look distinct from each other. there isn't after page break, becuase users wouldn't be able to tell between closing a file and opening another from flipping a page
+
+Why substitute and backslash?
+
+000000000 means it is blank so it is like substitute
+111111111 is a lot a ones like to get attention of something
+
+
+What are some off by one errors?
+
+12 and 13 (square root of LCD of 16 and 9 and square root of concatenation of 16 and 9) with 13 and 14 (both of the squares has 1 and 6 touching 9)
+
+14 and 15 with 13 and 14 is like 1983 with 1984. 1983 doesn't have any coincidences despite being right beside the infamous 1984. So is 15 like 1983, unless you think 225 (15 sqaured) is a really cool number 😎. the fact that the 225 add the 2 together to get 45 and 45 squared is 2025. (not a endorsement to  project2025 or 45th president) is not that appealing because it is cliche. In fact, so cliche that, 14 and 15 would be in some music videos in that the 14th and 15th music video is for the same anime, I think.
+
+What fashion do I think is cool (reference to 225 being a cool number)?
+
+Unlike what that most internet roman historians think (i am not one of them), I do not think that bad german people were cool. I think that music videos with supposedly evil german architecture would not actually have any. Evil germans build grey concrete boxes. 
+
+I think that buildings should be colorful, but not grafitie or advertisment kind of color. And no spikey architecture ( traditional european traditional japanese, chinese, korean, ect...) no wooden on outside. and also, trees with colorfull flowers.
+
+I don't like roads
+
+Most parts of building should be made of concrete, steel or mineral wool. I like wooden floors because wood is not heat conductive. The wooden floor panel should be thin. Wood that should be used is red like minecraft acacia. because red wood has highest corrosion resistance. all the buildings need to have walkable roofs.
+
+Walls should be covered with copper foil. A saftey feature needed would be to detect if current in foil. copper foil is waterproof, antimicrobial and corrosion resistant. Antimony is non-toxic to humans, and the etymology of monk is false and the story never existed. However, for implant uses, I think copper should alloy with titanium becuase titanium is not a biocide to almost every organism. copper walls would look better than drywall.
+
+All the windows are made of some plastic. 
+
+if there are outlets and stuff, then there is a walkable space between the walls that is walkable such take the wires can be reached. The ceramic and rocks that are used should not be granite or anythings. It should all be galena. Because I once thought galena has heat conductivity of wood and smoothness of granite. But the filling should be fibreglass or similar because of low density and heat insulating. 
+
+I don't like black, blue, white, orange, or red uniforms because they are cliche. I like green. I don't like capes, they look useless. shirts, ties and stuff are out of place because what if they have big boobs. I think that a short capelet that goes in front would look the best. out of zipper, velcro, and button, I would choose button. I think medals look bad because the reflectiveness look out of place. I think that magenta plastic things look the best since magenta is the opposite of green on the color wheel.
+
+Statues should be made of aluminium because aluminium is the most reflective in uv and visible. over the aluminium should be refractive transparent ceramic. ceramic would protect against mercury. refractive so that at different angels it would get color and not be uncanny like historically accurate roman statues. And refractive ceramic can make dielectrics which can make a dielectric mirror.
+
+In conclusion 15 (sqrt 225) is a really cool number like a music video 💚👗🔰🙋‍♀️🟢👒🪟🏳️‍🌈🪟⛪ with 1983 (one less than 📕1984) (like 15 being one less than 💻16) blackmarks ⚫👗💼(2 black duffle bags containing humans 😟)👜 filmed in singapore ⛰️
+
+Do you like computer (💻16) or book(📕1984)?
+
+Can't say book because haven't read in a long time.
+
+Do you like nets?
+
+I like nets. In many times in warfare, nets came on helmets to attach vegetation for camoflauge. And they do look good on helmets because it is less boring than a solid color 🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓
+
+Why is Computer organization the best class?
+
+37 and 23 are important numbers to me in this opensource, and coincidentally the class I based it on is formerly 3723, infact the semister I took it was the first semister that it changed to 3724. Although, if any class follows my SABCDFSS ciriculum, it would be the worst. OneHundred% that it is a joke. 
+
+
+What is my ideal programming language?
+
+The programming language would have requirements of atleast word size of 1 bits. THere is no min or max on address size.
+
+It would work on bitarrays and memory would only be done on bits, and it is the same with pointer arithmetic.
+
+Instead of classes and structures, so when doing inheritance, compositions there are options for compiler optimization. 
+
+no functions only macros
+
+number system is base62 0to9 then capitalized alphabet then lowercase.
+
+the things that are treated as variable names are emojis and hanzi and the user can create their own characters using radicals and stuff. 
+
+all varible names must have atleast one of the emoji or hanzi and no hiragana
+
+hiragana and blackboard letters are used in keywords and pipes
+
+brackets parenthesis quotes and stuff are replaced with html tags or something.
+
+The best ide would be inspect element🤓
+
+you can nest your code whenever you want
+
+break (something in japanese) denests your code and jumps to whatever line is not as denested
+
+break needs a parameter of how many to denest
+
+continue is the same continue and break uses the same keyword
+
+
+continue and pass are not only the same keyword but also the same non-delayed expansion keyword
+
+there is no private, protected or global keyword. instead the labels and variables just expire after certain amounts of lines or denests that is specified in declaration. It can be use if the variable is saved by a pointer
+
+program control would use be fork where there id of the daughters can be used to compute the ids of the others, and same with process. a traditional fork, so that all children can find parent.
+
+the data types are number,balenced trinary bit,bit,pointer, 1 indexed array with fixed word size, 0 indexed array with fixed word size, label, member of (class, structure, type, ect..), file path, formatted string, mathmatical operator, callable, and literal.
+
+the operations on complex numbers are  built in.
+The encoding of filepath, string, formatted string are the same as in here, so it is 169420
+
+6 types of numbers
+𝔸 which represents affine geometry
+	10...0 is unsigned infinity
+ℕ is natrual numbers
+	1...1 is infinity 
+	0....0 is 0
+𝕆 is vector but scientific which can represent octanarions
+𝕍 is vector of ℤ
+𝕐 is int that I use to thought how it was encoded (Y is close to ℤ)
+	01...1 is positive infinity
+	1...1 is negative infinity
+	0...0 is 0
+	10...0 is null
+ℤ is int (a more optimized version of 𝔸 but without infinities or null)
+
+no if statements, it is boolean labels.
+boolean labels are ゜ and ゛ white space is required around them
+labels can be put before or after any line without newline unless the line has :: after non white space which means multiline
+:: makes all to right as comments with the exception of go to
+; (like colon)means end line and can stack multiple lines in a single line. ;; is also valid but that is just empty lines
+
+To declare that one of them is a string of ones use 𝕐 or 𝔸 because smallest is 1...1 ℤ,𝕍, and 𝕆 do not count because the string of 1 would be an error that isn't caught. just like how some hiragana do not get modifiers
+
+To decalre that one of them is a string of zeros
+
+import takes filepath, hash function, hash, and expiray, only one import per ; or line
+
+declaration takes value and expiray. varible names can be many on there. to change a value or expiray, the variables take on the one that was closest behind it.
+
+expiray takes in literals have the form from (N) nest level (Z) to nest level (Z) (N)
+
+go to takes in form label name (:: for dots on corners makes an X) line (Y, null exits program) nest level (Z) like coordinates. XYZ
+
+macros takes in literals and have the form macroname literals
+
+callable is like stack. there is push pop peek. void function can be run on callable. but the void can only change the stack. ¡callable¡ does a pure function call on the stack and returns only 1 value. each callable can only have 1 function call.
+
+You can call expired variables with labels. 
+
+=゛ returns ゛ if eqaul to else ゜ are the other rules are obvious
+
+fi finds the 1st boolean above it that matches what boolean was returned and go to the boolean label
+
+if is the same but down
+
+if and fi statements end at a boolean label
+
+.var. returns a string of the 1st bit duplicated into the size of var
+
+if .var. ゜
+WXYZ ₩ :even: 0 0
+	WXYZ :: ∞ 0 ゛
+	WXYZ ₩ :odd: 0 0
+
+
+//line if first colon has a whitespace after, it is a multiline and the rest are comment
+//if it is a colon either comment after or null label
+//if it is not whitespace, but there is another colon after, it is l
+//if it is not whitespace, then it is a label declaration
+labels can only be put after a line or one a line by themselves
+ no actually, if the there is something taking label arguement,
+
+
+page break also in programming
+
+₩ is symbol used for page names. compiler compiles all pages that do not have names. pages without names cannot be imported It is now 	𝕎𝕏𝕐ℤ
+
+end of page means stop program
+
+
+
+
+bytestreams
+FIFO (file insert file overtype), can be ram file object or on disk.
+options: peek push pop overtype insert
+
+socket: bidirectional
+
+signals: standard, realtime.
+
+file lock: exclusive read lock, inclusive read lock, exclusive write locks (allow read, no allow read)
+
+mutex
+
+condition variables
+
+semophores
+
+
+switch
+options: max jump block size, max number of blocks
+options per block: defualt, DNE (does not exist, undefined behavior if jumped here), code block with jump. code block with jump needed if put int if statement.
+-------------------------------------------------------------------------------------------------------------
+varible length 169420
+if 1st char is a C and second is a V, it would be a wide character with length 3, unless 3rd character is 000000000 which would return CV or 111111111 which it would be CV and then a special character. else if the 3rd characters second bit is 1, then it would be a wide character of length 4 unless the 4th is 111111111 which would be CV and then a character and then a special character 
+so there are 2^9+420*(2^9-2)/2+420*(2^9-2)/2*(2^9-1) = 512+107100+54728100 = 54835712 The number is divisible by byte size which is 2^9 and a twin prim 107101
+
+-------------------------------------------------------------------------------------------------------------
+os 
+
+ask when moving: folder: rename, move out the way, delete, append. 
+file: same options (no prepend file)
+
+-------------------------------------------------------------------------------------------------------------
+any code that is valid in yip yap is also valid in yip yap markup language
+
+Also FORTRAN shell would consider any letter in any language in any case to be the same.
+
+letters with the same sounds or same sounds with different accent are on different alphabets
+
+english c C A (first number which xor is 0)
+english k C Ya (first number which xor is 0)
+english e N e (first number which xor is 0)
+english alphabet 1  is first number which xor is 0
+english alphabet 2 is second number which xor is 0
+
+
+spanish j and h are not different sounds because h is a vowel and j is a consant
+
+Alphabets with CV start from top
+
+hiragana na N A (last number which xor is 0)
+katakana na N A (second to last number which xor is 0)
+
+There is a number in the middle that stores the n and a and ya in to it
+english a  B A (that number)
+
+
+Actually no, 
+C A (first number which xor is 0) selects the C
+C A (second number which xor is 0) selects the A
+C A (third number which xor is 0) selects the K
+
+
+
+
+
+
+
+
+
+
+
