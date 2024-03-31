@@ -1,0 +1,370 @@
+$include Stack.h
+
+//-----------------------------------------------------------------------------
+// pop two items off of the stack, add them and push the result on the stack
+$def		+
+// pop ptr (store in V)
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// adds x and y
+D=D+M
+// pushes X + Y
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// pop two items off of the stack and subtract them, push result onto stack
+$def		-
+// pop ptr (store in V)
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// pushes X - Y
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// Pop the top of the stack and push its bitwise complement on the stack
+$def		not
+$popAD
+D=!D
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// Pop the top of the stack and push its negation on the stack
+$def		neg
+$popAD
+D=-D
+$pushD
+$end
+
+// comparison operators
+
+//order is reversed because stack
+
+//-----------------------------------------------------------------------------
+// pop two elements of off the stack and push -1 if they are equal, 0 otherwise
+//use . . to show that it returns bool like .FALSE. .TRUE.
+$def		.eq.
+// subtracts the two values and pops the result
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// jump to TRUE if the result is 0
+@TRUE
+D;JEQ
+// jump to FALSE otherwise
+D=0
+@EXIT
+0;JMP
+// D=-1 if x==y else D=0
+(TRUE)
+D=-1
+// jump to end
+(EXIT)
+// pushes result onto stack
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// Pop a, pop b if b<a push -1 else push 0
+$def		.lt.
+// subtracts the two values and pops the result
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// jump to TRUE if the result is 0
+@TRUE
+D;JLT
+// jump to FALSE otherwise
+D=0
+@EXIT
+0;JMP
+// D=-1 if x==y else D=0
+(TRUE)
+D=-1
+// jump to end
+(EXIT)
+// pushes result onto stack
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// Pop a, pop b if b>a push -1 else push 0
+$def		.gt.
+// subtracts the two values and pops the result
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// jump to TRUE if the result is 0
+@TRUE
+D;JGT
+// jump to FALSE otherwise
+D=0
+@EXIT
+0;JMP
+// D=-1 if x==y else D=0
+(TRUE)
+D=-1
+// jump to end
+(EXIT)
+// pushes result onto stack
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// pop two values of the stack and push their bitwise and
+$def		and
+// pop ptr (store in V)
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// ands x and y
+D=D&M
+// pushes X & Y
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// pop a, pop b, push a|b
+$def		or
+// pop ptr (store in V)
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// ors x and y
+D=D|M
+// pushes X | Y
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// Go into infinite loop to halt the program
+$def		::
+@HALT
+(HALT)
+0;JMP
+$end
+
+
+
+// new added
+
+
+//less than or equal to
+$def		.le.
+// subtracts the two values and pops the result
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// jump to TRUE if the result is 0
+@TRUE
+D;JLE
+// jump to FALSE otherwise
+D=0
+@EXIT
+0;JMP
+// D=-1 if x==y else D=0
+(TRUE)
+D=-1
+// jump to end
+(EXIT)
+// pushes result onto stack
+$pushD
+$end
+
+
+
+// greater than or equal
+$def		.ge.
+// subtracts the two values and pops the result
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// jump to TRUE if the result is 0
+@TRUE
+D;JGE
+// jump to FALSE otherwise
+D=0
+@EXIT
+0;JMP
+// D=-1 if x==y else D=0
+(TRUE)
+D=-1
+// jump to end
+(EXIT)
+// pushes result onto stack
+$pushD
+$end
+
+
+// not equal
+$def		.ne.
+// subtracts the two values and pops the result
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// subtracts x and y
+D=D-M
+// jump to TRUE if the result is 0
+@TRUE
+D;JNE
+// jump to FALSE otherwise
+D=0
+@EXIT
+0;JMP
+// D=-1 if x==y else D=0
+(TRUE)
+D=-1
+// jump to end
+(EXIT)
+// pushes result onto stack
+$pushD
+$end
+
+
+
+$def		nand
+// pop ptr (store in V)
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// nands x and y
+D=D&M
+D=!D
+// pushes X & Y
+$pushD
+$end
+
+
+
+$def		nor
+// pop ptr (store in V)
+$popAD
+$@ CV
+M=D
+// pop value (store in D reg)
+$popAD
+// get value from V
+$@ CV
+// nors x and y
+D=D|M
+D=!D
+// pushes X & Y
+$pushD
+$end
+
+
+//if and only if a b
+$def		xand
+// pop ptr (store in VI)
+$peekAD
+$@ CVI
+M=D
+// store next in IV
+$peekAD
+$@ CIV
+M=D
+//order of nor or and doesn't matter unless you need to optimize but VI and IV must be done last
+$nor
+
+//pushes and
+$@ CVI
+D=M
+$@ CIV
+D=D&M 
+$pushD
+
+// ors nor or and
+$or
+$end
+
+// exclusive or
+$def		xor
+// pop ptr (store in VI)
+$peekAD
+$@ CVI
+M=D
+// store next in IV
+$peekAD
+$@ CIV
+M=D
+//order of nand and or doesn't matter unless you need to optimize but VI and IV must be done last
+$nand
+
+//pushes or
+$@ CVI
+D=M
+$@ CIV
+D=D|M 
+$pushD
+
+// ands nand and or
+$and
+$end
+
+// backwards compatibility
+$def		xnor
+$xand
+$end
+$def		xnand
+$xor
+$end

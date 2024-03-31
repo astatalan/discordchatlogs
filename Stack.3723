@@ -1,0 +1,436 @@
+// Note for this the stack will be starting at the top of memory and building
+// down.  These are the basic stack operations that will be implemented
+
+//-----------------------------------------------------------------------------
+// Push D register onto the stack, D remains unchanged by ths operation
+$def		pushD
+// goes to SP
+$@ ¡
+M=M-1
+A=M+1
+// pushes D onto stack
+M=D
+// decrements SP
+
+$end
+
+//-----------------------------------------------------------------------------
+// Push A register onto the stack, D is value pushed on the stack after this
+// operation
+$def		pushA
+// saves A to D then pushes D
+D=A
+$pushD
+$end
+
+$def		pushM
+//save M to D then pushes
+D=M
+$pushD
+$end
+
+//-----------------------------------------------------------------------------
+// Pop the top of stack into the A and D registers
+$def		popAD
+// increments SP
+$@ ¡
+AM=M+1
+// goes to last value in the stack
+
+// saves value to D reg and A reg
+AD=M
+$end
+
+$def		peekAD
+$@ ¡
+A=M+1
+// goes to last value in the stack
+
+// saves value to D reg and A reg
+AD=M
+$end
+
+$def		popA
+// increments SP
+$@ ¡
+AM=M+1
+// goes to last value in the stack
+
+// saves value to A reg
+A=M
+$end
+
+$def		peekA
+$@ ¡
+A=M+1
+// goes to last value in the stack
+
+// saves value to A reg
+A=M
+$end
+
+$def		popD
+// increments SP
+$@ ¡
+AM=M+1
+// goes to last value in the stack
+
+// saves value to D reg (at deleted stack position)
+D=M
+$end
+
+$def		peekD
+$@ ¡
+A=M+1
+// goes to last value in the stack
+
+// saves value to D reg (at deleted stack position)
+D=M
+$end
+
+
+//output from stack onto M
+// doesn't make sense to pop into M without poping into D becuase D is required to transfer info
+$def		popMD
+//store current position into V like when writting a CV
+D=A
+$@ CV
+M=D
+//pop and go to popped
+$@ ¡
+AM=M+1
+//save into D
+D=M
+//go to CV
+$@ CV
+//point to last position and store
+A=M
+M=D
+$end
+
+$def		peekMD
+//store current position into V like when writting a CV
+D=A
+$@ CV
+M=D
+//peek and go to peeked
+$@ ¡
+AM=M+1
+//save into D
+D=M
+//go to CV
+$@ CV
+//point to last position and store
+A=M
+M=D
+$end
+
+
+$def		popAMD
+//store current position into V like when writting a CV
+D=A
+$@ CV
+M=D
+//pop and go to popped
+$@ ¡
+AM=M+1
+//save into D
+D=M
+//go to CV
+$@ CV
+//point to last position and store
+A=M
+AM=D
+$end
+
+$def		peekAMD
+//store current position into V like when writting a CV
+D=A
+$@ CV
+M=D
+//peek and go to peeked
+$@ ¡
+AM=M+1
+//save into D
+D=M
+//go to CV
+$@ CV
+//point to last position and store
+A=M
+AM=D
+$end
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// Use push value, push ptr, setValuePtr pops these off of stack and
+// sets *ptr=value
+$def		=&*
+$@ ¡
+//soft deletes ptr
+M=M+1 
+//soft deletes value and go to value
+AM=M+1 
+// save value to D
+D=M
+//go to ptr
+A=A-1
+// saves value (D reg) to address
+A=M
+M=D
+
+$end
+
+$def		=*&
+$@ ¡
+//soft deletes value
+M=M+1 
+//soft deletes ptr and go to ptr
+AM=M+1 
+//go to value
+A=A-1
+// save value to D
+D=M
+//go to ptr
+A=A+1
+// saves value (D reg) to pointer 
+A=M
+M=D
+$end
+
+//-----------------------------------------------------------------------------
+// get pointer pops pointer off of the stack then push *ptr onto the
+// stack
+$def		*
+$@ ¡
+A=M+1
+//now at pointer
+//go to value
+A=M
+D=M
+//got *ptr in D
+//go back to SP
+$@ ¡
+A=M+1
+//store here
+M=D
+$end
+
+//-----------------------------------------------------------------------------
+// store register D in the local variable id defined by *(LCL-id)
+$def		!=		id
+// saves D reg to R15
+$@ CV
+M=D
+// R14 defined as LCL-id
+@id
+D=A
+$@ !
+D=M-D
+$@ CVI
+M=D
+// get back original D
+$@ CV
+D=M
+// store it there
+$@ CVI
+A=M
+M=D
+
+$end
+
+//-----------------------------------------------------------------------------
+// get the local variable id defined by *(LCL-id) into registers A and D
+$def		!!		id
+// saves the id num
+@id
+D=A
+// goes to LCL-id
+$@ !
+A=M-D
+// saves the value at LCL-id to AD
+AD=M
+$end
+
+//-----------------------------------------------------------------------------
+// set the argument id (defined by *(ARG-id)) to the value stored in register D
+$def		%=		id
+// saves D reg to R15
+$@ CV
+M=D
+// R14 defined as ARG-id
+@id
+D=A
+$@ %
+D=M-D
+$@ CVI
+M=D
+// get back original D
+$@ CV
+D=M
+// store D at pointer R14
+$@ CVI
+A=M
+M=D
+$end
+
+//-----------------------------------------------------------------------------
+// get argument id (defined by *(ARG-id)) and store in registers A and D
+$def		%%		id
+// saves the id num
+@id
+D=A
+// goes to ARG-id
+$@  %
+A=M-D
+// saves the value at ARG-id to AD
+AD=M
+$end
+
+//-------------initialize SP
+$def		shapeFSS
+//written so that it is compatible with different hack screen
+$@  SCREEN
+D=A-1
+$@  ¡
+M=D
+$@  HP
+M=A+1
+$end
+
+// memory checking
+
+//check error would not exclusivly have error code because
+//malloc would check before allocating to preserve machine state
+//and before means sp and hepa are not colliding yet
+$def		shapeLESS
+(end)
+//set R3 to 3
+@3
+M=A
+//loop
+@end
+0;JMP
+$end
+
+
+$def		check shapeRROR
+$@  ¡
+D=M
+$@  =
+D=D-M
+// jump if SP is greater than heap
+@Err1r
+D+1;JGE
+// is error
+$SHAPELESS
+(Err1r)
+//no err0r
+$end
+
+// hardware information
+
+// at sp LCL ARG
+// arg and lcl are switched because ! looks closer to $ but then I realized that arg should be% because enable delayed expansion
+$def		@ ¡
+@0
+$end
+
+// @1 @2 @4 @8 @16 @32
+
+//¡
+
+//!
+
+//%
+
+//$
+
+//¥
+
+//=
+
+//↩
+
+$def		@ !
+@1
+$end
+
+$def		@ %
+@2
+$end
+
+// commandline end at 4
+// changed BASH to $
+$def		@ $
+@4
+$end
+
+// commandline inputs starts at 8
+// changed CMD to ¥
+// due to project 8 (coincidence can be easily seen with vscode highlight feature)
+// in project 8 factorial takes input at 8 and 7 and eight is bigger
+$def		@ ¥
+@8
+$end
+
+//heap begins at 16
+//was going to represent heap as hitpoint, couldn't find heart hiroglyp (black and white one), so thought it as a line. then realized that it looks like yen but also heap with things missing inbetween
+$def		@ =
+@16
+$end
+
+//add 32 to go down a line in screen
+$def		@ ↩
+@32
+$end
+
+
+// define avalible registers
+$def		@ CIV
+@15
+$end
+
+$def		@ CV
+@14
+$end
+
+$def		@ CVI
+@13
+$end
+
+$def		@ CVII
+@12
+$end
+
+$def		@ CIIX
+@11
+$end
+
+$def		@ CIX
+@10
+$end
+
+$def		@ CX
+@9
+$end
+
+//big number hardware information
+
+$def		@ SCREEN
+@16384
+$end
+
+$def		@ KBD
+@24576
+$end
+
+
+
+
+
+//why =*& and %= ?
+// one takes arguments one doesn't

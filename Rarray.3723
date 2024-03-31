@@ -1,0 +1,167 @@
+//heap points at the last register that is occupied
+// stack pointes
+// while writting the first def, I realized too healthy means no more memory.
+// like if your skull grew too think, no space for brain
+// Therefore that is why Heap builds up. more tank armour = no space  for computer
+// changing the archtecture makes no sense at all.
+// also heap would have holes and spaces in it like foam armour and bone.
+// which is unlike a stack
+// 		HP
+// $AtHP
+// M=A+1
+// $end
+// $HP and SP would be combined to SHP but that sounds like Shape so it is $SHAPE
+// Rarray because in R it is 1 indexed. so R array
+
+
+
+
+
+//create 1-based Rarray, pops size and pushes array pointer
+// array size one can't store any numbers
+$def		Rarray_popSize
+//pop array size
+$popD
+// go to hp
+$@ =
+// update where pointer will be
+M=M+D
+// go to malloc place
+A=M-D
+//store size
+M=D
+//go back to updated HP
+$@ =
+//get location of rarray
+D=M-D
+// push pointer
+$pushD
+$end
+
+//hanoi tower operations
+$def		atomicswitch
+//pop A
+$popD
+$@ CIV
+M=D
+//pop B
+$popD
+$@ CVI
+M=D
+
+
+//push A
+$@ CIV
+$pushM
+//pushB
+$@ CVI
+$pushM
+$end
+            
+
+// pop size of array (3 means 2 elements), then pop elements
+$def		hanoi_pop>3
+// Rarray_fromSize but store pointer at VI and VII and size at IV and IX
+$popD
+//store size (number of elements) at IV
+$@ CIV
+M=D-1
+//store size at IX
+$@ CIX
+M=D-1
+// go to hp
+$@ =
+// update where pointer will be
+M=M+D
+// go to malloc place
+A=M-D
+//store size
+M=D
+//go back to updated HP
+$@ =
+//get location of rarray
+D=M-D
+//store at VI
+$@ CVI
+M=D
+//store at VII
+$@ CVII
+M=D
+
+
+//stores into array
+//uses VI(location) and IV(size)
+// V is already used by pop macros
+(loop)
+$popD
+$@ CVI
+// store next place to store and go to place to write
+AM=M+1
+//write to array
+M=D
+
+// decrement size
+$@ CIV
+M=M-1
+// loop if size is not 0
+@loop
+M;JGT
+
+//writes array as if it was a queue
+//uses VII(location) and IX(size)
+(qloop)
+$@ CVII
+//update next place to push and go to it
+AM=M+1
+//push queue
+$pushM
+
+//decrement in size
+$@ CIX
+M=M-1
+// loop if size is not 0
+@qloop
+M;JGT
+$end
+
+//copies an element in stack
+$def		dup
+// At 2 and store at D then do A=A+D would take longer
+
+//go to SP
+$@ ¡
+// increase stack size and go to there
+AM=M-1
+A=A+1
+A=A+1
+// copy elemtne we want 
+D=M
+//paste
+A=A-1
+M=D
+$end
+
+//pops array pointer, pushes array and size (size becomes last element)
+//[]{} are illegal characters in asembler varible name
+$def []
+
+
+$end
+
+//returns final array
+// pops number arguments
+//0 means whole array
+// positive is positive index
+// negative is whole array except abs(index) just like 0-index
+$def [:]
+
+$end
+
+// pops three arguments
+// 0 is 1st index
+// negative is python negative index
+// 3rd argument is interval
+// negative interval means go back and loop around
+$def [::]
+
+$end

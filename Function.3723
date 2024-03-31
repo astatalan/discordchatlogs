@@ -1,0 +1,138 @@
+$include Operators.h
+
+//-----------------------------------------------------------------------------
+// Push the return address on the stack
+// Jump to procedure
+// On return, pop nargs-1 arguments off of stack
+$def		procedureCall		nargs		procedure
+// Push return address onto stack
+@RETURN 
+$pushA
+// Jump to procedure
+@procedure
+0;JMP
+// Return here
+(RETURN)
+// Remove nargs-1 arguments off of the stack
+@nargs
+D=A-1
+// Add D to SP to pop off consumed arguments
+$@ ¡
+M=D+M
+$end
+
+//void function
+$def		voidCall		nargs		procedure
+// Push return address onto stack
+@RETURN 
+$pushA
+// Jump to procedure
+@procedure
+0;JMP
+// Return here
+(RETURN)
+// Remove nargs arguments off of the stack
+@nargs
+D=A
+// Add D to SP to pop off consumed arguments
+$@ ¡
+M=D+M
+$end
+
+//nargs must be greater than nreturn
+$def		functionCall		nargs		procedure		nreturn
+// Push return address onto stack
+@RETURN 
+$pushA
+// Jump to procedure
+@procedure
+0;JMP
+// Return here
+(RETURN)
+// Remove nargs-nreturn arguments off of the stack
+@nargs
+D=A
+@nreturn
+D=D-A
+// Add D to SP to pop off consumed arguments
+$@ ¡
+M=D+M
+$end
+
+//-----------------------------------------------------------------------------
+// Return from procedure, pop return address off of stack and jump to it.
+// Has the effect of returning control flow to the calling procedure
+$def		return
+// pops frame
+// was renamed to __popFrame__ before copied and pasted
+
+//-----------------------------------------------------------------------------
+// Restore LCL and ARG pointers to Caller values
+// reset SP to the same value as when pushFrame was executed
+
+// Restore SP to when stack frame was initialized
+$@ !
+D=M 
+$@ ¡
+M=D
+// Pop ARG
+$popAD
+$@ %
+M=D
+// Pop LCL
+$popAD
+$@ !
+M=D
+//-----------------------------------------------------------------------------
+
+// pops the address and unconditionally jumps to it
+$popAD
+0;JMP
+$end
+
+//-----------------------------------------------------------------------------
+// Push LCL and ARG onto the stack
+// adjust ARG pointer to point to argument variable segment
+// adjust LCL pointer to point to local variable segment
+// formerly known as pushFrame
+// pushFrame joins with return
+// so have to rename to opposite of return
+$def		locate		nargs		nlocals
+// Push LCL
+$@ !
+D=M
+$pushD
+// Push ARG
+$@ %
+D=M
+$pushD
+$pushD
+// sets LCL to SP
+$@ ¡
+D=M
+$@ !
+M=D
+// moves SP down by nlocals
+@nlocals
+D=A 
+$@ ¡
+M=M-D
+// sets ARG to LCL+3+nargs
+@nargs
+D=M
+
+//nargs must be strictly greater than nreturns
+
+
+
+@3
+D=D+A
+$@ !
+D=D+A
+$@ %
+M=D
+$end
+
+
+
+//-----------------------------------------------------------------------------
